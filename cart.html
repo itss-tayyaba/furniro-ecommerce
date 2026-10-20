@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <span>Furniro</span>
+    </div>
+
+    <nav>
+       <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html" class="active">Shop</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+    </nav>
+
+    <div class="nav-icons">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <div class="cart-icon">
+  <i class="fa-solid fa-cart-shopping"></i>
+ 
+  
+</div>
+    </div>
+    
+</header>
+<!-- HERO SHOP -->
+ <img src="logo.png" class="contact-logo" alt="logo">
+<section class="contact-hero">
+
+  <img src="behind.png" alt="bg">
+
+  <div class="contact-hero-content">
+        <!-- LOGO ABOVE -->
+   
+    <h1>Cart</h1>
+     <p class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="arrow">›</span>
+  <span class="active">Cart</span>
+</p>
+  </div>
+</section>
+<section class="cart-page">
+
+  <!-- LEFT TABLE -->
+  <div class="cart-table">
+
+    <!-- HEADER -->
+    <div class="cart-header">
+      <span>Product</span>
+      <span>Price</span>
+      <span>Quantity</span>
+      <span>Subtotal</span>
+    </div>
+
+    <!-- ITEM -->
+    <div class="cart-row">
+
+      <div class="product-info">
+        <img src="sofa.png" alt="">
+        <p>Asgaard sofa</p>
+      </div>
+
+      <p class="price">Rs. 250,000.00</p>
+
+      <input type="number" value="1" min="1" class="qty">
+
+      <p class="subtotal">Rs. 250,000.00</p>
+
+      <i class="fa-solid fa-trash delete"></i>
+
+    </div>
+
+  </div>
+
+
+  <!-- RIGHT TOTAL BOX -->
+  <div class="cart-total-box">
+
+    <h2>Cart Totals</h2>
+
+    <div class="total-row">
+      <span>Subtotal</span>
+      <span class="light">Rs. 250,000.00</span>
+    </div>
+
+    <div class="total-row">
+      <span>Total</span>
+      <span class="bold">Rs. 250,000.00</span>
+    </div>
+
+    <!-- ✅ CHECKOUT BUTTON -->
+    <button class="checkout-btn" onclick="goToCheckout()">
+      Check Out
+    </button>
+
+  </div>
+
+</section>
+
+
+<section class="features">
+
+  <div class="feature">
+    <i class="fa-solid fa-trophy"></i>
+    <div>
+      <h4>High Quality</h4>
+      <p>crafted from top materials</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-shield-halved"></i>
+    <div>
+      <h4>Warranty Protection</h4>
+      <p>Over 2 years</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-truck"></i>
+    <div>
+      <h4>Free Shipping</h4>
+      <p>Order over 150 $</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-headset"></i>
+    <div>
+      <h4>24 / 7 Support</h4>
+      <p>Dedicated support</p>
+    </div>
+  </div>
+
+
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2>Funiro.</h2>
+      <p>
+        400 University Drive Suite 200 Coral <br>
+        Gables,<br>
+        FL 33134 USA
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- HELP -->
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Payment Options</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policies</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <div class="subscribe">
+        <input type="text" placeholder="Enter Your Email Address">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2023 furino. All rights reverved</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

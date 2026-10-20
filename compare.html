@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <span>Furniro</span>
+    </div>
+
+    <nav>
+       <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html" class="active">Shop</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+    </nav>
+
+    <div class="nav-icons">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <div class="cart-icon">
+  <i class="fa-solid fa-cart-shopping"></i>
+ 
+  
+</div>
+    </div>
+    
+</header>
+<!-- HERO SHOP -->
+ <img src="logo.png" class="contact-logo" alt="logo">
+<section class="contact-hero">
+
+  <img src="behind.png" alt="bg">
+
+  <div class="contact-hero-content">
+        <!-- LOGO ABOVE -->
+   
+    <h1>Product Comparsion</h1>
+     <p class="breadcrumb">
+  <a href="index.html">Home</a>
+  <span class="arrow">›</span>
+  <span class="active">Contact</span>
+</p>
+  </div>
+</section>
+
+<section class="compare-section">
+
+  <!-- LEFT TEXT -->
+  <div class="compare-left">
+    <h3>Go to Product page for more Products</h3>
+    <a href="shop.html">View More</a>
+  </div>
+
+  <!-- PRODUCT 1 -->
+  <div class="compare-box">
+    <img src="sofa1.png" alt="Asgaard Sofa">
+
+    <h4>Asgaard Sofa</h4>
+    <p class="compare-price">Rs. 250,000.00</p>
+
+    <div class="stars-row">
+      <span>4.7</span>
+      <div class="stars-icons">⭐⭐⭐⭐⭐</div>
+      <span class="review-count">204 Review</span>
+    </div>
+  </div>
+
+  <!-- PRODUCT 2 -->
+  <div class="compare-box">
+    <img src="sofa2.png" alt="Outdoor Sofa">
+
+    <h4>Outdoor Sofa Set</h4>
+    <p class="compare-price">Rs. 224,000.00</p>
+
+    <div class="stars-row">
+      <span>4.2</span>
+      <div class="stars-icons">⭐⭐⭐⭐⭐</div>
+      <span class="review-count">145 Review</span>
+    </div>
+  </div>
+
+  <!-- RIGHT SELECT -->
+<div class="compare-select">
+  <h4>Add A Product</h4>
+
+  <div class="fake-select" onclick="goToShop()">
+    Choose a Product
+    <span class="arrow"></span>
+  </div>
+</div>
+
+</section>
+
+<section class="specs-section">
+
+  <div class="specs-container">
+
+    <!-- LEFT LABEL COLUMN -->
+    <div class="specs-col labels">
+
+      <h3>General</h3>
+      <p>Sales Package</p>
+      <p>Model Number</p>
+      <p>Secondary Material</p>
+      <p>Configuration</p>
+      <p>Upholstery Material</p>
+      <p>Upholstery Color</p>
+
+      <h3>Product</h3>
+      <p>Filling Material</p>
+      <p>Finish Type</p>
+      <p>Adjustable Headrest</p>
+      <p>Maximum Load Capacity</p>
+      <p>Origin of Manufacture</p>
+
+      <h3>Dimensions</h3>
+      <p>Width</p>
+      <p>Height</p>
+      <p>Depth</p>
+      <p>Weight</p>
+      <p>Seat Height</p>
+      <p>Leg Height</p>
+
+      <h3>Warranty</h3>
+      <p>Warranty Summary</p>
+      <p>Warranty Service Type</p>
+      <p>Covered in Warranty</p>
+      <p>Not Covered in Warranty</p>
+      <p>Domestic Warranty</p>
+
+    </div>
+
+    <!-- PRODUCT 1 -->
+    <div class="specs-col">
+
+      <h3></h3>
+      <p>1 sectional sofa</p>
+      <p>TFCBLGRBL6SRHS</p>
+      <p>Solid Wood</p>
+      <p>L-shaped</p>
+      <p>Fabric + Cotton</p>
+      <p>Bright Grey & Lion</p>
+
+      <h3></h3>
+      <p>Foam</p>
+      <p>Matte</p>
+      <p>No</p>
+      <p>280 KG</p>
+      <p>India</p>
+
+      <h3></h3>
+      <p>265.32 cm</p>
+      <p>76 cm</p>
+      <p>167.76 cm</p>
+      <p>45 KG</p>
+      <p>41.52 cm</p>
+      <p>5.46 cm</p>
+
+      <h3></h3>
+      <p>1 Year Manufacturing Warranty</p>
+      <p>For Warranty Claims or Any Product Related Issues Please Email at operations@trevifurniture.com</p>
+      <p>Warranty Against Manufacturing Defect</p>
+      <p>The Warranty Does Not Cover Damages Due To Usage Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>
+      <p>1 Year</p>
+
+      <button class="specs-cart-btn">Add To Cart</button>
+
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="specs-col">
+
+      <h3></h3>
+      <p>1 Three Seater, 2 Single Seater</p>
+      <p>DTUBLGRBL568</p>
+      <p>Solid Wood</p>
+      <p>L-shaped</p>
+      <p>Fabric + Cotton</p>
+      <p>Bright Grey & Lion</p>
+
+      <h3></h3>
+      <p>Matte</p>
+      <p>Matte</p>
+      <p>Yes</p>
+      <p>300 KG</p>
+      <p>India</p>
+
+      <h3></h3>
+      <p>265.32 cm</p>
+      <p>76 cm</p>
+      <p>167.76 cm</p>
+      <p>65 KG</p>
+      <p>41.52 cm</p>
+      <p>5.46 cm</p>
+
+      <h3></h3>
+      <p>1.2 Year Manufacturing Warranty</p>
+      <p>For Warranty Claims or Any Product Related Issues Please Email at support@xyz.com</p>
+      <p>Warranty of the product is limited to manufacturing defects only.</p>
+      <p>The Warranty Does Not Cover Damages Due To Usage Beyond Its Intended Use And Wear & Tear In The Natural Course Of Product Usage.</p>
+      <p>3 Months</p>
+
+      <button class="specs-cart-btn">Add To Cart</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="features">
+
+  <div class="feature">
+    <i class="fa-solid fa-trophy"></i>
+    <div>
+      <h4>High Quality</h4>
+      <p>crafted from top materials</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-shield-halved"></i>
+    <div>
+      <h4>Warranty Protection</h4>
+      <p>Over 2 years</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-truck"></i>
+    <div>
+      <h4>Free Shipping</h4>
+      <p>Order over 150 $</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-headset"></i>
+    <div>
+      <h4>24 / 7 Support</h4>
+      <p>Dedicated support</p>
+    </div>
+  </div>
+
+
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2>Funiro.</h2>
+      <p>
+        400 University Drive Suite 200 Coral <br>
+        Gables,<br>
+        FL 33134 USA
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- HELP -->
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Payment Options</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policies</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <div class="subscribe">
+        <input type="text" placeholder="Enter Your Email Address">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2023 furino. All rights reverved</p>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

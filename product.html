@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <span>Furniro</span>
+    </div>
+
+    <nav>
+       <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html">Shop</a></li>
+   <li><a href="blog.html">Blog</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+    </nav>
+
+    <div class="nav-icons">
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-regular fa-heart"></i>
+
+    <!-- CART -->
+    <div class="cart-icon">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count">0</span>
+    </div>
+</div>
+
+</header>
+
+<section class="breadcrumb-bar">
+  <div class="breadcrumb-container">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <a href="shop.html">Shop</a>
+    <span>›</span>
+    <span class="current">Asgaard sofa</span>
+  </div>
+</section>
+
+<section class="product-page">
+
+  <!-- LEFT SIDE -->
+  <div class="product-left">
+
+    <!-- SMALL IMAGES -->
+    <div class="thumbs">
+      <img src="sofa1.png" onclick="changeImage(this)">
+      <img src="sofa2.png" onclick="changeImage(this)">
+      <img src="sofa3.png" onclick="changeImage(this)">
+      <img src="sofa4.png" onclick="changeImage(this)">
+    </div>
+
+    <!-- MAIN IMAGE -->
+    <div class="main-image">
+      <img id="mainProductImage" src="Asgaard sofa.png">
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="product-right">
+
+    <h1>Asgaard sofa</h1>
+    <h2 class="price">Rs. 250,000.00</h2>
+
+    <div class="rating">
+      ⭐⭐⭐⭐⭐
+      <span>5 Customer Review</span>
+    </div>
+
+    <p class="desc">
+      Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact...
+    </p>
+
+    <!-- SIZE -->
+    <div class="sizes">
+      <p>Size</p>
+      <button class="active">L</button>
+      <button>XL</button>
+      <button>XS</button>
+    </div>
+
+    <!-- COLOR -->
+    <div class="colors">
+      <p>Color</p>
+      <span class="color purple"></span>
+      <span class="color black"></span>
+      <span class="color gold"></span>
+    </div>
+
+    <!-- CART -->
+    <div class="cart">
+      <div class="qty">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <button class="add">Add To Cart</button>
+      <button class="compare-btn">Compare</button>
+    </div>
+
+  </div>
+
+ <hr class="product-divider">
+
+<div class="product-meta">
+  <p><strong>SKU</strong> : SS001</p>
+  <p><strong>Category</strong> : Sofas</p>
+  <p><strong>Tags</strong> : Sofa, Chair, Home, Shop</p>
+
+  <div class="share">
+    <span><strong>Share</strong> :</span>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+</div>
+
+</section>
+
+<section class="product-tabs">
+
+  <!-- TABS -->
+  <div class="tabs">
+    <span class="active">Description</span>
+    <span>Additional Information</span>
+    <span>Reviews [5]</span>
+  </div>
+
+  <!-- TEXT -->
+  <div class="tab-content">
+    <p>
+      Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+    </p>
+
+    <p>
+      Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.
+    </p>
+  </div>
+
+  <!-- IMAGES -->
+  <div class="tab-img">
+    <div class="img-box">
+      <img src="double seater.png" alt="">
+    </div>
+    <div class="img-box">
+      <img src="three seater.png" alt="">
+    </div>
+  </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="productss">
+    <h2>Related Products</h2>
+
+    <div class="gridd">
+
+        <!-- 1 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Syltherine.png">
+            <span class="badge red">-30%</span>
+
+            <div class="overlay">
+                <button class="add-related"
+                    data-name="Syltherine"
+                    data-price="2500000"
+                    data-image="Syltherine.png">
+                    Add to cart
+                </button>
+
+
+                
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000 <span class="old">Rp 3.500.000</span></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Leviosa.png">
+
+            <div class="overlay">
+                <<button class="add-related"
+                     data-name="Leviosa"
+                     data-price="2500000"
+                     data-image="Leviosa.png">
+                     Add to cart
+                     </button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Lolito.png">
+            <span class="badge red">-50%</span>
+
+            <div class="overlay">
+                <button class="add-related"
+                 data-name="Lolito"
+                  data-price="7000000"
+                    data-image="Lolito.png">
+                     Add to cart
+                     </button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Lolito</h3>
+                <p>Luxury sofa</p>
+                <div class="price">Rp 7.000.000 <span class="old">Rp 14.000.000</span></div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Respira.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                <button class="add-related"
+                   data-name="Respira"
+                     data-price="500000"
+                      data-image="Respira.png">
+                       Add to cart
+                          </button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Respira</h3>
+                <p>Outdoor table</p>
+                <div class="price">Rp 500.000</div>
+            </div>
+        </div>
+
+</section>
+<!-- BUTTON -->
+ <div class="show-moree">
+    <a href="shop.html">
+      <button>Show More</button>
+    </a>
+  </div>
+
+  
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2>Funiro.</h2>
+      <p>
+        400 University Drive Suite 200 Coral <br>
+        Gables,<br>
+        FL 33134 USA
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- HELP -->
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Payment Options</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policies</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <div class="subscribe">
+        <input type="text" placeholder="Enter Your Email Address">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2023 furino. All rights reverved</p>
+  </div>
+</footer>
+<div id="cart-overlay" class="cart-overlay"></div>
+<!-- CART SIDEBAR -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <h3>Shopping Cart</h3>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <p>Subtotal: <span id="cart-total">Rs. 0</span></p>
+    <button>Cart</button>
+    <button>Checkout</button>
+    <button class="compare-btn">Comparsion</button>
+  </div>
+</div>
+    
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

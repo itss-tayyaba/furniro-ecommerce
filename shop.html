@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        <img src="logo.png" alt="logo">
+        <span>Furniro</span>
+    </div>
+
+    <nav>
+       <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="shop.html" class="active">Shop</a></li>
+    <li><a href="blog.html">Blog</a></li>
+ <li><a href="contact.html">Contact</a></li>
+</ul>
+    </nav>
+
+    <div class="nav-icons">
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-heart"></i>
+        <div class="cart-icon">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cart-count">0</span>
+  
+</div>
+    </div>
+    
+</header>
+<!-- HERO SHOP -->
+<section class="shop-hero">
+
+  <!-- BACKGROUND IMAGE -->
+  <img src="behind.png" alt="bg" class="shop-bg">
+
+  <!-- CONTENT -->
+  <div class="shop-overlay">
+    <h1>Shop</h1>
+
+    <p class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="arrow">›</span>
+      <span class="active">Shop</span>
+    </p>
+  </div>
+
+</section>
+
+<!-- FILTER BAR -->
+<section class="filter-bar">
+
+  <div class="left-filter">
+    <span class="filter-icon">☰</span>
+    <span>Filter</span>
+
+    <span class="divider"></span>
+
+    <span class="results">Showing 1–16 of 32 results</span>
+  </div>
+
+  <div class="right-filter">
+    <span>Show</span>
+    <input type="text" value="16">
+
+    <span>Sort by</span>
+    <select>
+      <option>Default</option>
+      <option>Price</option>
+      <option>Popularity</option>
+    </select>
+  </div>
+
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+    <h2>Our Products</h2>
+
+    <div class="grid">
+
+        <!-- 1 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Syltherine.png">
+            <span class="badge red">-30%</span>
+
+            <div class="overlay">
+                   <button class="add-related"
+  data-name="Syltherine"
+  data-price="2500000"
+  data-image="Syltherine.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000 <span class="old">Rp 3.500.000</span></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Leviosa.png">
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Leviosa"
+  data-price="2500000"
+  data-image="Leviosa.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Lolito.png">
+            <span class="badge red">-50%</span>
+
+            <div class="overlay">
+                <button class="add-related"
+  data-name="Lolito"
+  data-price="7000000"
+  data-image="Lolito.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Lolito</h3>
+                <p>Luxury sofa</p>
+                <div class="price">Rp 7.000.000 <span class="old">Rp 14.000.000</span></div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Respira.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Respira"
+  data-price="500000"
+  data-image="Respira.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Respira</h3>
+                <p>Outdoor table</p>
+                <div class="price">Rp 500.000</div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Grifo.png">
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Grifo"
+  data-price="1500000"
+  data-image="Grifo.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <div class="price">Rp 1.500.000</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Muggo.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Muggo"
+  data-price="150000"
+  data-image="Muggo.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <div class="price">Rp 150.000</div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Pingky.png">
+            <span class="badge red">-50%</span>
+
+            <div class="overlay">
+                <button class="add-related"
+  data-name="Pingky"
+  data-price="7000000"
+  data-image="Pingky.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Pingky</h3>
+                <p>Bed set</p>
+                <div class="price">Rp 7.000.000 <span class="old">Rp 14.000.000</span></div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Potty.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                <button class="add-related"
+  data-name="Potty"
+  data-price="500000"
+  data-image="Potty.png">
+  Add to cart
+</button>
+          
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Potty</h3>
+                <p>Flower pot</p>
+                <div class="price">Rp 500.000</div>
+            </div>
+        </div>
+         <!-- 1 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Syltherine.png">
+            <span class="badge red">-30%</span>
+
+            <div class="overlay">
+                    <button class="add-related"
+  data-name="Syltherine"
+  data-price="2500000"
+  data-image="Syltherine.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000 <span class="old">Rp 3.500.000</span></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Leviosa.png">
+
+            <div class="overlay">
+                  <button class="add-related"
+  data-name="Leviosa"
+  data-price="2500000"
+  data-image="Leviosa.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <div class="price">Rp 2.500.000</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Lolito.png">
+            <span class="badge red">-50%</span>
+
+            <div class="overlay">
+                   <button class="add-related"
+  data-name="Lolito"
+  data-price="7000000"
+  data-image="Lolito.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Lolito</h3>
+                <p>Luxury sofa</p>
+                <div class="price">Rp 7.000.000 <span class="old">Rp 14.000.000</span></div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Respira.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Respira"
+  data-price="500000"
+  data-image="Respira.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Respira</h3>
+                <p>Outdoor table</p>
+                <div class="price">Rp 500.000</div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Grifo.png">
+
+            <div class="overlay">
+                <button class="add-related"
+  data-name="Grifo"
+  data-price="1500000"
+  data-image="Grifo.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <div class="price">Rp 1.500.000</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Muggo.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                   <button class="add-related"
+  data-name="Muggo"
+  data-price="150000"
+  data-image="Muggo.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <div class="price">Rp 150.000</div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Pingky.png">
+            <span class="badge red">-50%</span>
+
+            <div class="overlay">
+                    <button class="add-related"
+  data-name="Pingky"
+  data-price="7000000"
+  data-image="Pingky.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Pingky</h3>
+                <p>Bed set</p>
+                <div class="price">Rp 7.000.000 <span class="old">Rp 14.000.000</span></div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card" onclick="toggleCard(this, event)">
+            <img src="Potty.png">
+            <span class="badge green">New</span>
+
+            <div class="overlay">
+                 <button class="add-related"
+  data-name="Potty"
+  data-price="500000"
+  data-image="Potty.png">
+  Add to cart
+</button>
+                <div class="actions">
+                    <span>Share</span>
+                    <span>Compare</span>
+                    <span>Like</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <h3>Potty</h3>
+                <p>Flower pot</p>
+                <div class="price">Rp 500.000</div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+   <div class="pagination">
+  <span class="page active">1</span>
+  <span class="page">2</span>
+  <span class="page">3</span>
+  <a href="product.html" class="next">Next</a>
+</div>
+
+
+</section>
+
+<section class="features">
+
+  <div class="feature">
+    <i class="fa-solid fa-trophy"></i>
+    <div>
+      <h4>High Quality</h4>
+      <p>crafted from top materials</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-shield-halved"></i>
+    <div>
+      <h4>Warranty Protection</h4>
+      <p>Over 2 years</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-truck"></i>
+    <div>
+      <h4>Free Shipping</h4>
+      <p>Order over 150 $</p>
+    </div>
+  </div>
+
+  <div class="feature">
+    <i class="fa-solid fa-headset"></i>
+    <div>
+      <h4>24 / 7 Support</h4>
+      <p>Dedicated support</p>
+    </div>
+  </div>
+
+
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2>Funiro.</h2>
+      <p>
+        400 University Drive Suite 200 Coral <br>
+        Gables,<br>
+        FL 33134 USA
+      </p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h4>Links</h4>
+      <a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- HELP -->
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Payment Options</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policies</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <div class="subscribe">
+        <input type="text" placeholder="Enter Your Email Address">
+        <button>SUBSCRIBE</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>2023 furino. All rights reverved</p>
+  </div>
+</footer>
+
+<div id="cart-overlay" class="cart-overlay"></div>
+<!-- CART SIDEBAR -->
+<div id="cart-sidebar" class="cart-sidebar">
+  <h3>Shopping Cart</h3>
+
+  <div id="cart-items"></div>
+
+  <div class="cart-footer">
+    <p>Subtotal: <span id="cart-total">Rs. 0</span></p>
+    <button>Cart</button>
+    <button>Checkout</button>
+    <button class="compare-btn">Comparsion</button>
+  </div>
+</div>
+
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html> 
